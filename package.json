@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "yournamemyname",
   "version": "1.0.0",
   "description": "lets make an app that lets me compare the amount of people with specific lastnames",
