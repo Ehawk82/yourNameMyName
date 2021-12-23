@@ -1,4 +1,4 @@
-var init = () => {
+/*var init = () => {
 	buildUI();
 },
 buildUI = () => {
@@ -13,3 +13,4 @@ buildUI = () => {
 window.onload = () => {
 	init();
 };
+*/

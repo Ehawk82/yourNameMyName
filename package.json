@@ -1,0 +1,24 @@
+{
+  "name": "yournamemyname",
+  "version": "1.0.0",
+  "description": "lets make an app that lets me compare the amount of people with specific lastnames",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ehawk82/yourNameMyName.git"
+  },
+  "author": "Jason Graziano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ehawk82/yourNameMyName/issues"
+  },
+  "homepage": "https://github.com/Ehawk82/yourNameMyName#readme",
+  "dependencies": {}
+}
