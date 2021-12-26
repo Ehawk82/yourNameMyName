@@ -14,3 +14,4 @@ window.onload = () => {
 	init();
 };
 */
+console.log(r1("graziano"))
