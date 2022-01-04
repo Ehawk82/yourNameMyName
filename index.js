@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 //
 
-const surnameCount = async (x,y) => { 
+export const surnameCount = async (x,y) => { 
   let input1 = x,
       input2 = y;
 
@@ -31,8 +31,8 @@ const surnameCount = async (x,y) => {
 
   //
 
-  let result1 = p1d;
-  let result2 = p2d;
+  let result1 = p1d,
+      result2 = p2d;
 
   //
 
@@ -45,12 +45,15 @@ const surnameCount = async (x,y) => {
   if(input1 === ""){
     input1 = "no name entered";
   }
+
   if(input2 === ""){
     input2 = "no name entered";
   }
+
   if(Number.isNaN(result1)){
      result1 = "there are no results for that name";
   };
+
   if(Number.isNaN(result2)){
      result2 = "there are no results for that name";
   };
@@ -63,9 +66,11 @@ const surnameCount = async (x,y) => {
   var r1 = (i,r) => {
     console.log(i + ": " + r);
   };
+
   var r2 = (i,r) => {
     console.log(i + ": " + r);
   };
+
   var rs = r => {
     console.log(r);
   };
@@ -75,9 +80,6 @@ const surnameCount = async (x,y) => {
   r1(input1,result1);
   r2(input2,result2);
   rs(results);
-}
+};
+
 //
-
-
-
-surnameCount("graziano", "cassel");
