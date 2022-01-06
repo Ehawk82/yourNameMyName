@@ -50,6 +50,25 @@ export const surnameCount = async (x,y) => {
     input2 = "no name entered";
   }
 
+  //
+
+function largest(a, b) {
+  var x = input1,
+      y = input2;
+      
+  if(a > b) {
+    
+    return x;
+  }
+  else if(a === b) {
+    return 0;
+  }
+  else {
+    return y;
+  }
+}
+let l = largest(result1,result2);
+  //
   if(Number.isNaN(result1)){
      result1 = "there are no results for that name";
   };
@@ -71,15 +90,15 @@ export const surnameCount = async (x,y) => {
     console.log(i + ": " + r);
   };
 
-  var rs = r => {
-    console.log(r);
+  var rs = (l,r) => {
+    console.log(l + " is more popular by " + r + " people");
   };
   
   //
 
   r1(input1,result1);
   r2(input2,result2);
-  rs(results);
+  rs(l,results);
 };
 
 //
