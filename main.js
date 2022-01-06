@@ -12,7 +12,9 @@ prompt.get(['name1', 'name2'], function (err, result) {
   //console.log('  Name 2: ' + result.name2);
   if(result.name1 && result.name2){
   	surnameCount(result.name1,result.name2);
-  }
+    //process.exit(1);
+  } 
+
 });
 
 function onErr(err) {

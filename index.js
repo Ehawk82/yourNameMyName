@@ -99,6 +99,7 @@ let l = largest(result1,result2);
   r1(input1,result1);
   r2(input2,result2);
   rs(l,results);
+  process.exit(1);
 };
 
 //
