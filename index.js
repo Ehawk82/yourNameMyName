@@ -76,9 +76,6 @@ let l = largest(result1,result2);
   if(Number.isNaN(result2)){
      result2 = "there are no results for that name";
   };
-  if(Number.isNaN(results)){
-     results = "cannot calculate";
-  }
 
   //
 
@@ -91,7 +88,12 @@ let l = largest(result1,result2);
   };
 
   var rs = (l,r) => {
-    console.log(l + " is more popular by " + r + " people");
+    if(Number.isNaN(results)){
+       results = "cannot calculate difference";
+       console.log(results);
+    } else {
+       console.log(l + " is more popular by " + r + " people");
+    }
   };
   
   //
