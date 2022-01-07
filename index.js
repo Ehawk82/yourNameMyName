@@ -36,7 +36,7 @@ export const surnameCount = async (x,y) => {
 
   //
 
-  var diff = (a, b) => { return Math.abs(a - b); };
+  const diff = (a, b) => { return Math.abs(a - b); };
 
   //
 
@@ -57,7 +57,6 @@ function largest(a, b) {
       y = input2;
       
   if(a > b) {
-    
     return x;
   }
   else if(a === b) {
@@ -101,7 +100,10 @@ let l = largest(result1,result2);
   r1(input1,result1);
   r2(input2,result2);
   rs(l,results);
-  process.exit(1);
+
+  //
+
+  process.exit();
 };
 
 //
