@@ -3,6 +3,7 @@ import fetch from 'node-fetch';
 //
 
 export const surnameCount = async (x,y) => { 
+
   let input1 = x,
       input2 = y;
 
@@ -52,21 +53,21 @@ export const surnameCount = async (x,y) => {
 
   //
 
-function largest(a, b) {
-  var x = input1,
-      y = input2;
-      
-  if(a > b) {
-    return x;
+  function largest(a, b) {
+    var x = input1,
+        y = input2;
+        
+    if(a > b) {
+      return x;
+    }
+    else if(a === b) {
+      return 0;
+    }
+    else {
+      return y;
+    }
   }
-  else if(a === b) {
-    return 0;
-  }
-  else {
-    return y;
-  }
-}
-let l = largest(result1,result2);
+  let l = largest(result1,result2);
   //
   if(Number.isNaN(result1)){
      result1 = "there are no results for that name";
@@ -104,6 +105,7 @@ let l = largest(result1,result2);
   //
 
   process.exit();
+  
 };
 
 //
